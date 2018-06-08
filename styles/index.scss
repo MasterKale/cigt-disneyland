@@ -1,2 +1,54 @@
 @import 'bootstrap/scss/bootstrap-reboot.scss';
-@import 'bootstrap/scss/bootstrap-grid.scss';
+
+// Mobile-first, so `xs` starts here
+// Four levels of passports:
+// Southern California Select:   .socal
+// Deluxe:                       .deluxe
+// Signature:                    .sig
+// Signature Plus:               .sigplus
+
+// 1 x 4 grid
+.wrapper {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 25vh;
+}
+
+.passport {
+    height: 100%;
+    // Place content in the center
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.--socal {
+        background: red;
+    }
+    &.--deluxe {
+        background: green;
+        color: white;
+    }
+    &.--sig {
+        background: yellow;
+    }
+    &.--sigplus {
+        background: blue;
+        color: white;
+    }
+
+    .yesno {
+        font-size: 6em;
+        text-transform: uppercase;
+    }
+}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {
+    // 2 x 2 grid
+    .wrapper {
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 50vh;
+    }
+}
