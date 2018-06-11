@@ -1,5 +1,7 @@
 @import 'bootstrap/scss/bootstrap-reboot.scss';
 
+@import './colors.scss';
+
 // Mobile-first, so `xs` starts here
 // Four levels of passports:
 // Southern California Select:   .socal
@@ -23,18 +25,20 @@
     align-items: center;
 
     &.--socal {
-        background: red;
+        background: $background-socal;
+        color: $foreground-socal;
     }
     &.--deluxe {
-        background: green;
-        color: white;
+        background: $background-deluxe;
+        color: $foreground-deluxe;
     }
     &.--sig {
-        background: yellow;
+        background: $background-sig;
+        color: $foreground-sig;
     }
     &.--sigplus {
-        background: blue;
-        color: white;
+        background: $background-sigplus;
+        color: $foreground-sigplus;
     }
 
     .yesno {
