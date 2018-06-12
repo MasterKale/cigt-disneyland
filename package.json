@@ -5,12 +5,16 @@
   "license": "MIT",
   "devDependencies": {
     "babel-preset-env": "^1.7.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.12.0",
     "node-sass": "^4.9.0",
     "parcel-bundler": "^1.8.1"
   },
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "start": "parcel app/index.html",
+    "build": "parcel build app/index.html",
+    "lint": "eslint ./app"
   },
   "dependencies": {
     "bootstrap": "^4.1.1"
