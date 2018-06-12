@@ -22,3 +22,6 @@ socalElem.innerText = boolToWord(socalDates[todayLocalISO]);
 deluxeElem.innerText = boolToWord(deluxeDates[todayLocalISO]);
 sigElem.innerText = boolToWord(sigDates[todayLocalISO]);
 sigplusElem.innerText = boolToWord(sigplusDates[todayLocalISO]);
+
+// Show the page now that JS has had a chance to figure out which passes can go
+document.body.style.display = 'unset';

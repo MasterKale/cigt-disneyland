@@ -9,6 +9,11 @@
 // Signature:                    .sig
 // Signature Plus:               .sigplus
 
+// Hide the page initially until all of the JS downloads and has a chance to run
+body {
+  display: none;
+}
+
 // 1 x 4 grid
 .wrapper {
     height: 100%;
