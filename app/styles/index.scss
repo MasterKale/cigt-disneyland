@@ -13,6 +13,7 @@
 // Hide the page initially until all of the JS downloads and has a chance to run
 body {
   display: none;
+  line-height: 1;
 }
 
 // 1 x 4 grid
@@ -27,6 +28,7 @@ body {
     height: 100%;
     // Place content in the center
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -52,14 +54,19 @@ body {
         @include characterBackground(goofy, $posX: 10%);
     }
 
+    .text {
+        text-shadow: 2px 2px rgba(0,0,0,0.3);
+        text-align: center;
+    }
+
     .yesno {
         font-size: 6em;
         text-transform: uppercase;
-        text-shadow: 2px 2px rgba(0,0,0,0.3);
     }
 
     .passportName {
-
+        font-size: 2em;
+        text-transform: lowercase;
     }
 }
 
