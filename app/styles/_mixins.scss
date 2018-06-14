@@ -1,0 +1,7 @@
+@mixin characterBackground($characterName, $posX: 50%, $posY: 50%) {
+  background-image: url('../images/#{$characterName}.svg');
+  background-repeat: no-repeat;
+  background-size: 120%;
+  background-position-x: $posX;
+  background-position-y: $posY;
+}

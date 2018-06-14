@@ -1,6 +1,7 @@
 @import 'bootstrap/scss/bootstrap-reboot.scss';
 
-@import './colors.scss';
+@import './_colors.scss';
+@import './_mixins.scss';
 
 // Mobile-first, so `xs` starts here
 // Four levels of passports:
@@ -30,25 +31,34 @@ body {
     align-items: center;
 
     &.--socal {
-        background: $background-socal;
+        background-color: $background-socal;
         color: $foreground-socal;
+        @include characterBackground(goofy, $posX: 10%);
     }
     &.--deluxe {
-        background: $background-deluxe;
+        background-color: $background-deluxe;
         color: $foreground-deluxe;
+        @include characterBackground(donald);
     }
     &.--sig {
-        background: $background-sig;
+        background-color: $background-sig;
         color: $foreground-sig;
+        @include characterBackground(pluto);
     }
     &.--sigplus {
-        background: $background-sigplus;
+        background-color: $background-sigplus;
         color: $foreground-sigplus;
+        @include characterBackground(mickey);
     }
 
     .yesno {
         font-size: 6em;
         text-transform: uppercase;
+        text-shadow: 2px 2px rgba(0,0,0,0.3);
+    }
+
+    .passportName {
+
     }
 }
 
