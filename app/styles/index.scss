@@ -5,10 +5,10 @@
 
 // Mobile-first, so `xs` starts here
 // Four levels of passports:
-// Southern California Select:   .socal
-// Deluxe:                       .deluxe
-// Signature:                    .sig
 // Signature Plus:               .sigplus
+// Signature:                    .sig
+// Deluxe:                       .deluxe
+// Southern California Select:   .socal
 
 // Hide the page initially until all of the JS downloads and has a chance to run
 body {
@@ -30,25 +30,26 @@ body {
     justify-content: center;
     align-items: center;
 
-    &.--socal {
-        background-color: $background-socal;
-        color: $foreground-socal;
-        @include characterBackground(goofy, $posX: 10%);
-    }
-    &.--deluxe {
-        background-color: $background-deluxe;
-        color: $foreground-deluxe;
-        @include characterBackground(donald);
+    &.--sigplus {
+      background-color: $background-sigplus;
+      color: $foreground-sigplus;
+      @include characterBackground(mickey);
     }
     &.--sig {
         background-color: $background-sig;
         color: $foreground-sig;
         @include characterBackground(pluto);
     }
-    &.--sigplus {
-        background-color: $background-sigplus;
-        color: $foreground-sigplus;
-        @include characterBackground(mickey);
+
+    &.--deluxe {
+        background-color: $background-deluxe;
+        color: $foreground-deluxe;
+        @include characterBackground(donald);
+    }
+    &.--socal {
+        background-color: $background-socal;
+        color: $foreground-socal;
+        @include characterBackground(goofy, $posX: 10%);
     }
 
     .yesno {
