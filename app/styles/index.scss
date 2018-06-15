@@ -53,7 +53,7 @@ body {
     &.--sig {
         background-color: $background-sig;
         color: $foreground-sig;
-        @include characterBackground(pluto);
+        @include characterBackground(minnie, $bgSize: 110%, $posY: 80%);
     }
 
     &.--deluxe {
