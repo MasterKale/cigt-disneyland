@@ -13,7 +13,7 @@
   },
   "scripts": {
     "start": "parcel app/index.html",
-    "build": "parcel build app/index.html",
+    "build": "parcel build app/index.html --public-url https://canigotodisneylandtoday.com",
     "lint": "eslint ./app"
   },
   "dependencies": {
