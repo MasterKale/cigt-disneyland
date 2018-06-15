@@ -64,7 +64,7 @@ body {
     &.--socal {
         background-color: $background-socal;
         color: $foreground-socal;
-        @include characterBackground(goofy, $posX: 10%);
+        @include characterBackground(goofy, $bgSize: 110%, $posX: 10%, $posY: 65%);
     }
 
     .text {
