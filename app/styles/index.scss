@@ -14,6 +14,7 @@
 body {
   display: none;
   line-height: 1;
+  font-family: Courier, monospace;
 }
 
 // 1 x 4 grid
@@ -79,7 +80,7 @@ body {
     }
 
     .passportName {
-        font-size: 2em;
+        font-size: 1.5em;
         text-transform: lowercase;
         font-style: italic;
     }
