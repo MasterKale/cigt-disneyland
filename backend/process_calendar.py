@@ -17,7 +17,9 @@ num_columns = 3
 END SETTINGS
 """
 
-for filename in os.listdir(folder_path):
+files = [filename for filename in os.listdir(folder_path) if filename[-3:] == "png"]
+
+for filename in files:
     select = parse_calendar(
         filename=f"{folder_path}/{filename}",
         start_year=start_year,
