@@ -20,7 +20,7 @@ END SETTINGS
 files = [filename for filename in os.listdir(folder_path) if filename[-3:] == "png"]
 
 for filename in files:
-    select = parse_calendar(
+    parsed = parse_calendar(
         filename=f"{folder_path}/{filename}",
         start_year=start_year,
         start_month=start_month,
@@ -28,11 +28,11 @@ for filename in files:
         num_columns=num_columns,
     )
 
-    # Write the output to a file
+    # Create a filename to match the input filename but with .json
     title = filename.split(".")[0]
     output_name = f"out/{title}.json"
     # Create the output folder if it doesn't exist
     os.makedirs(os.path.dirname(output_name), exist_ok=True)
     # Write JSON to file
     with open(output_name, "w") as out:
-        json.dump(select, out)
+        json.dump(parsed, out)
