@@ -88,7 +88,7 @@ def parse_calendar(filename: str, start_year: int, start_month: int, num_months:
                     is_available = rgb2hex((r, g, b)) == "#B7D291"
                     to_return[key] = is_available
                     # DEBUG - See where we've been
-                    px[x, y] = (0, 0, 0)
+                    # px[x, y] = (0, 0, 0)
                 # Move over
                 x += cal.cell_width + cal.border_inner
             # Move back to the first column
@@ -96,5 +96,5 @@ def parse_calendar(filename: str, start_year: int, start_month: int, num_months:
             # Move down a row
             y += cal.week_height
     # DEBUG - Save a disposable copy of the image with modified pixel data
-    img.save("./blah.png")
+    # img.save("./blah.png")
     return to_return
