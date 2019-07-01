@@ -3,10 +3,10 @@ import './styles/index.scss';
 import { getTodayLocalISOString, boolToWord } from './utils';
 
 // JSON representations of each pass' blockout calendar
-import socalDates from './passDates/socal.json';
-import deluxeDates from './passDates/deluxe.json';
-import sigDates from './passDates/sig.json';
-import sigplusDates from './passDates/sigplus.json';
+import socalDates from './passDates/socal-annual.json';
+import deluxeDates from './passDates/deluxe-annual.json';
+import sigDates from './passDates/signature.json';
+import sigplusDates from './passDates/signature-plus.json';
 
 // DOM elements showing the big YES/NO
 const socalElem = document.getElementById('socal');
