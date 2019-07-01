@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
+    "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^12.1.0",
@@ -14,9 +15,11 @@
   "scripts": {
     "start": "parcel app/index.html",
     "build": "parcel build app/index.html --public-url https://canigotodisneylandtoday.com",
+    "updateDates": "node disneyAPIResponseParser.js",
     "lint": "eslint ./app"
   },
   "dependencies": {
+    "axios": "^0.19.0",
     "bootstrap": "^4.1.1"
   }
 }
